@@ -31,40 +31,45 @@
     }
 
     .brush {
-      width: 80%;
-      max-width: 400px;
+      width: 90%;
+      max-width: 500px;
       height: 25px;
-      background: linear-gradient(
-        90deg,
-        #009688 0%,
-        #4caf50 25%,
-        #ffc107 50%,
-        #e91e63 75%,
-        #3f51b5 100%
-      );
-      border-radius: 999px;
-      opacity: 0.3;
+      display: flex;
       margin: 2em 0;
     }
 
+    .brush div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .black { background: #000; }
+    .red { background: #d32f2f; }
+    .green { background: #388e3c; }
+
     .credits {
       font-size: 0.95em;
-      color: #555;
+      color: #444;
       max-width: 500px;
+      text-align: left;
       line-height: 1.5;
     }
   </style>
 </head>
 <body>
 
-  <h2>Press to listen to this music</h2>
+  <h2>🎧 Tap to hear the music</h2>
 
   <audio controls loop>
     <source src="Afghan_Rabab_Looped_5x.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <div class="brush"></div>
+  <div class="brush">
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+  </div>
 
   <div class="credits">
     <strong>Yaron Pe'er | Leat Sabbah</strong><br />
@@ -77,4 +82,3 @@
 
 </body>
 </html>
-
