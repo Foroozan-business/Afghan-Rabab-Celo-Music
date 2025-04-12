@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Afghan Rabab & Cello</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fefefe;
+      color: #222;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2em;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-bottom: 1em;
+    }
+
+    audio {
+      margin-bottom: 1em;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .brush {
+      width: 80%;
+      max-width: 400px;
+      height: 25px;
+      background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #4caf50 25%,
+        #ffc107 50%,
+        #e91e63 75%,
+        #3f51b5 100%
+      );
+      border-radius: 999px;
+      opacity: 0.3;
+      margin: 2em 0;
+    }
+
+    .credits {
+      font-size: 0.95em;
+      color: #555;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
-<body style="background:#000; color:#fff; font-family:sans-serif; text-align:center; padding:2em;">
-  <h1>Afghan Rabab & Cello</h1>
-  <p>Performed by Yaron Peer</p>
+<body>
+
+  <h2>Press to listen to this music</h2>
+
   <audio controls loop>
     <source src="Afghan_Rabab_Looped_5x.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
+  <div class="brush"></div>
+
+  <div class="credits">
+    <strong>Yaron Pe'er | Leat Sabbah</strong><br />
+    <em>Winter Sun – Afghani Rabab & Cello</em><br />
+    From the album <strong>'For You Alone'</strong><br />
+    Composition: Yaron Pe'er<br />
+    Recorded at Jerusalem Music Center by Zvika Hirshler<br />
+    Video: Yanai Ya'akov Levin
+  </div>
+
 </body>
 </html>
+
